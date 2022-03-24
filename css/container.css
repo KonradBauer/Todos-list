@@ -1,0 +1,50 @@
+.globalContainer {
+    margin: 0 auto;
+    padding: 50px;
+    max-width: 1000px;
+}
+
+.container {
+    display: flex;
+    max-width: 1000px;
+    flex-direction: row;
+    justify-content: flex-start;
+    background-color: white;
+    margin: 0 auto;
+    margin-top: 25px;
+    margin-bottom: 2px;
+    padding: 20px;
+    font-weight: bold;
+    font-size: large;
+    align-items: center;
+}
+
+.subContainer {
+    display: flex;
+    flex-direction: row;
+    max-width: 1000px;
+    justify-content: flex-start;
+    background-color: white;
+    margin: 0 auto;
+    margin-top: 10px;
+    margin-bottom: 2px;
+    padding: 20px;
+    font-weight: bold;
+    font-size: large;
+    align-items: center;
+}
+
+.taskContainer {
+    display: flex;
+    flex-direction: row;
+    max-width: 1000px;
+    justify-content: flex-start;
+    background-color: white;
+    margin: 0 auto;
+    margin-top: 2px;
+    margin-bottom: 2px;
+    padding: 30px;
+    font-weight: bold;
+    font-size: large;
+    align-items: center;
+}
