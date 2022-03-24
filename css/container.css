@@ -4,7 +4,7 @@
     max-width: 1000px;
 }
 
-.container {
+.section__container {
     display: flex;
     max-width: 1000px;
     flex-direction: row;
@@ -19,7 +19,7 @@
     align-items: center;
 }
 
-.subContainer {
+.section__subContainer {
     display: flex;
     flex-direction: row;
     max-width: 1000px;
@@ -34,7 +34,7 @@
     align-items: center;
 }
 
-.taskContainer {
+.section__taskContainer {
     display: flex;
     flex-direction: row;
     max-width: 1000px;
