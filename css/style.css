@@ -9,11 +9,29 @@ html {
 body {
     background-color: #eee;
     font-family: 'Montserrat', sans-serif;
-    word-break: break-all;
+    word-break: normal;
 }
 
 .header {
     font-size: xx-large;
     font-weight: bold;
     margin: 0 auto;
+}
+
+@media (max-width: 500px) {
+    .form__section {
+        flex-wrap: wrap;
+    }
+}
+
+@media (max-width: 500px) {
+    .form__button {
+        width: 100%;
+    }
+}
+
+@media (max-width: 500px) {
+    .form__input {
+        padding: 10px;
+    }
 }
