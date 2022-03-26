@@ -5,11 +5,11 @@
     margin: 0 auto;
     padding: 20px;
     justify-content: space-between;
+    grid-gap: 15px;
 }
 
 .form__input {
     flex-grow: 1;
-    grid-gap: 5px;
 }
 
 .form__button {
