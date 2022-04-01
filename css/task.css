@@ -1,3 +1,7 @@
-.taskDone {
-    text-decoration: line-through;
+.tasks__item {
+    text-decoration: none;
+}
+
+.tasks__item--done {
+    text-decoration: line-through; 
 }

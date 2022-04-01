@@ -1,0 +1,31 @@
+.doneButton {
+    width: 35px;
+    height: 35px;
+    border: none;
+    background-color: green;
+    cursor: pointer;
+}
+
+.doneButton:hover {
+    background-color: hsl(120, 100%, 35%);
+}
+
+.doneButton:active {
+    background-color: hsl(120, 100%, 45%);
+}
+
+.removeButton {
+    width: 35px;
+    height: 35px;
+    border: none;
+    background-color: red;
+    cursor: pointer;
+}
+
+.removeButton:hover {
+    background-color: hsl(0, 100%, 55%);
+}
+
+.removeButton:active {
+    background-color: hsl(0, 100%, 65%);
+}
