@@ -1,4 +1,4 @@
-.doneButton {
+.button {
     width: 35px;
     height: 35px;
     border: none;
@@ -6,26 +6,29 @@
     cursor: pointer;
 }
 
-.doneButton:hover {
+.button:hover {
     background-color: hsl(120, 100%, 35%);
 }
 
-.doneButton:active {
+.button:active {
     background-color: hsl(120, 100%, 45%);
 }
 
-.removeButton {
+.button--remove {
     width: 35px;
     height: 35px;
     border: none;
     background-color: red;
     cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-.removeButton:hover {
+.button--remove:hover {
     background-color: hsl(0, 100%, 55%);
 }
 
-.removeButton:active {
+.button--remove:active {
     background-color: hsl(0, 100%, 65%);
 }

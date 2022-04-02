@@ -54,11 +54,10 @@
       htmlString += `
         <li
             class="tasks__item${task.done ? " tasks__item--done" : ""}"
-        >    
-            <button class="js-done doneButton"></button>
+        </li>    
+            <button class="js-done button"></button>  
             ${task.content}
-            <button class="js-remove removeButton">🗑️</button>
-        </li >
+            <button class="js-remove button--remove">🗑️</button>
         `;
     }
 
