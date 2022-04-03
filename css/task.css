@@ -1,16 +1,12 @@
 .task {
-    display: grid;
-}
-
-.tasks__item {
-    text-decoration: none;
     display: flex;
-    flex-flow: row wrap;
-    justify-content: space-between;
+    justify-content: flex-start;
     align-items: center;
-    margin-bottom: 15px; 
+    width: 100%;
+    grid-gap: 15px;
+    margin-bottom: 10px;
 }
 
-.tasks__item--done {
+.task--done {
     text-decoration: line-through; 
 }
