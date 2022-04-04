@@ -5,7 +5,6 @@
     tasks.push({
       content: newTaskContent,
     });
-
     render();
   };
 
@@ -56,16 +55,21 @@
     bindEvents();
   };
 
+  const formEvents = () => {
+    const focusInput = document.querySelector(".js-input").focus();
+    const resetForm = document.querySelector(".form").reset();
+  };
+
   const onFormSubmit = (event) => {
     event.preventDefault();
     const newTaskContent = document.querySelector(".js-input").value.trim();
-    const focusInput = document.querySelector(".js-input").focus();
 
     if (newTaskContent === "") {
       return;
     };
 
     addNewTask(newTaskContent);
+    formEvents();
   };
 
   const init = () => {
