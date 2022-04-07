@@ -25,17 +25,22 @@
 
 <body>
     <main class="globalContainer">
-        <span class="header">Lista zadań</span>
-        <section class="section__container">Dodaj nowe zadanie</section>
-        <form class="form js-form">
-            <section class="form__section">
-                <input class="form__input js-input" autofocus required placeholder="Co jest do zrobienia?">
-                <button class="form__button">Dodaj zadanie</button>
-            </section>
-        </form>
-        <section class="section__subContainer">Lista zadań</section>
-        <section class="section__taskContainer">
-            <ul class="js-tasks section__list"></ul>
+        <section>
+            <header class="section__header">Lista zadań</header>
+            <subHeader class="section__subHeader">Dodaj nowe zadanie</subHeader>
+            <form class="form js-form">
+                <div class="form__container">
+                    <input class="form__input js-input" autofocus required placeholder="Co jest do zrobienia?">
+                    <button class="form__button">Dodaj zadanie</button>
+                </div>
+            </form>
+
+        </section>
+        <section>
+            <header class="section__header--special">Lista zadań</header>
+            <div class="section__taskContainer">
+                <ul class="js-tasks section__list"></ul>
+            </div>
         </section>
     </main>
 </body>

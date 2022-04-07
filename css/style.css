@@ -12,12 +12,6 @@ body {
     word-break: break-all;
 }
 
-.header {
-    font-size: xx-large;
-    font-weight: bold;
-    margin: 0 auto;
-}
-
 @media (max-width: 500px) {
     .form__section {
         flex-wrap: wrap;

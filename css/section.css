@@ -3,7 +3,13 @@
     padding: 0%;
 }
 
-.section__container {
+.section__header {
+    font-size: xx-large;
+    font-weight: bold;
+    margin: 0 auto;
+}
+
+.section__subHeader {
     display: flex;
     max-width: 1000px;
     flex-direction: row;
@@ -18,7 +24,7 @@
     align-items: center;
 }
 
-.section__subContainer {
+.section__header--special {
     max-width: 1000px;
     background-color: white;
     margin: 0 auto;
