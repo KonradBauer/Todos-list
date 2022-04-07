@@ -9,7 +9,7 @@ html {
 body {
     background-color: #eee;
     font-family: 'Montserrat', sans-serif;
-    word-break: normal;
+    word-break: break-all;
 }
 
 .header {
