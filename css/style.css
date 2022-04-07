@@ -13,7 +13,7 @@ body {
 }
 
 @media (max-width: 500px) {
-    .form__section {
+    .form__container {
         flex-wrap: wrap;
     }
 }
