@@ -19,9 +19,11 @@
     background-color: teal;
     color: white;
     padding: 10px;
+    transition: 0.35s;
 }
 
 .form__button:hover {
+    transform: scale(1.125);
     border: none;
     background-color: hsl(180, 100%, 35%);
     color: white;
