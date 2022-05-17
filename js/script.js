@@ -15,16 +15,22 @@
 
   const removeTask = (taskIndex) => {
     tasks = [
-      ...tasks.splice(taskIndex, "")
+      ...tasks.slice(0, taskIndex),
+      ...tasks.slice(taskIndex + 1)
     ];
 
     render();
   };
 
   const toggleTaskDone = (taskIndex) => {
-    tasks = tasks.map(...!tasks.content.done)
-
+    tasks = [
+      ...tasks.slice(0, taskIndex),
+      { ...tasks[taskIndex], done: true },
+      ...tasks.slice(taskIndex + 1),
+    ];
+    console.log(tasks);
     render();
+
   };
 
   bindEvents = () => {
