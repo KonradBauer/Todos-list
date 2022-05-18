@@ -25,12 +25,11 @@
   const toggleTaskDone = (taskIndex) => {
     tasks = [
       ...tasks.slice(0, taskIndex),
-      { ...tasks[taskIndex], done: true },
+      { ...tasks[taskIndex], done: !tasks[taskIndex].done },
       ...tasks.slice(taskIndex + 1),
     ];
     console.log(tasks);
     render();
-
   };
 
   bindEvents = () => {
