@@ -27,9 +27,9 @@
       return {
         ...task,
         done: !tasks[taskIndex].done,
-      }
+      };
     });
-    console.log(tasks);
+
     render();
   };
 
