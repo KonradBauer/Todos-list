@@ -26,10 +26,10 @@
     tasks = tasks.map(task => {
       return {
         ...task,
-        done: !tasks[taskIndex].done,
-      };
+        done: !task.done
+      }
     });
-
+    console.log(tasks);
     render();
   };
 
