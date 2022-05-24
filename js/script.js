@@ -33,7 +33,6 @@
             return task;
         });
 
-        console.log(tasks);
         render();
     };
 
