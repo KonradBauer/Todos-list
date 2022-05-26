@@ -25,6 +25,8 @@
 }
 
 .section__header--special {
+    display: flex;
+    justify-content: space-between;
     max-width: 1000px;
     background-color: white;
     margin: 0 auto;

@@ -27,10 +27,21 @@
             if (index === taskIndex) {
                 return {
                     ...task,
-                    done: !task.done
+                    done: !task.done,
                 }
             }
             return task;
+        });
+
+        render();
+    };
+
+    const setTasksDone = () => {
+        tasks = tasks.map(task => {
+            return {
+                ...task,
+                done: true,
+            }
         });
 
         render();
@@ -52,6 +63,18 @@
         });
     };
 
+    bindButtonsEvents = () => {
+        if (tasks.length === 0) {
+            console.log("Array is empty!")
+            showTaskButtons = document.querySelectorAll(".js-showTasksButtons");
+            showTaskButtons.forEach((showTaskButton, index) => {
+                showTaskButton.addEventListener("click", () => {
+                    setTasksDone(index);
+                });
+            });
+        }
+    };
+
     const renderTasks = () => {
         let htmlString = "";
 
@@ -67,9 +90,18 @@
 
         document.querySelector(".js-tasks").innerHTML = htmlString;
     };
-    const renderButtons = () => { };
 
-    const bindButtonsEvents = () => { };
+    const renderButtons = () => {
+        let buttonsString = "";
+
+        for (const task of tasks) {
+            buttonsString += `
+            <button class="js-setDone, setDone ${task.done ? "setDone--off" : ""}">Ukończ zadania</button>
+            `;
+        }
+
+        document.querySelector(".js-setDone").innerHTML = buttonsString;
+    };
 
     const render = () => {
 

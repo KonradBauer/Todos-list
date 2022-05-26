@@ -1,0 +1,24 @@
+.setDone {
+    color: teal;
+    border: none;
+    background-color: transparent;
+    transition: 0.35s;
+}
+
+.setDone:hover {
+    color: hsl(180, 100%, 35%);
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+.setDone:active {
+    color: hsl(180, 100%, 45%);
+    border: none;
+    background-color: transparent;
+}
+
+
+.setDone--off:disabled {
+    cursor: pointer;
+}
