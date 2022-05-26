@@ -52,23 +52,31 @@
         });
     };
 
-    const render = () => {
-
+    const renderTasks = () => {
         let htmlString = "";
 
         for (const task of tasks) {
             htmlString += `
-        <li class="task">    
-          <button class="js-done button ">${task.done ? "✓" : ""}</button>  
-          <span class="task${task.done ? " task--done" : ""}">${task.content}</span>
-          <button class="js-remove button--remove">🗑️</button>
-        </li>  
-        `;
+    <li class="task">    
+      <button class="js-done button ">${task.done ? "✓" : ""}</button>  
+      <span class="task${task.done ? " task--done" : ""}">${task.content}</span>
+      <button class="js-remove button--remove">🗑️</button>
+    </li>  
+    `;
         }
 
         document.querySelector(".js-tasks").innerHTML = htmlString;
+    };
+    const renderButtons = () => { };
 
+    const bindButtonsEvents = () => { };
+
+    const render = () => {
+
+        renderTasks();
+        renderButtons();
         bindEvents();
+        bindButtonsEvents();
     };
 
     const formEvents = () => {
