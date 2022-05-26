@@ -96,7 +96,7 @@
 
         for (const task of tasks) {
             buttonsString += `
-            <button class="js-setDone, setDone ${task.done ? "setDone--off" : ""}">Ukończ zadania</button>
+            <button class="js-setDone, setDone ${task.done ? "setDone--off" : ""}">Ukończ wszystkie</button>
             `;
         }
 
