@@ -92,10 +92,10 @@
     };
 
     const renderButtons = () => {
+
         if (tasks.length !== 0) {
             const buttonsElement = document.querySelector(".js-setDone");
-
-            buttonsElement.innerHTML = `<button class="js-setDone, setDone ${tasks.done ? "setDone--off" : ""}">Ukończ wszystkie</button>`;
+            buttonsElement.innerHTML = `<button class="js-setDone, setDone">Ukończ wszystkie</button>`;
         } else {
             if (tasks.length === 0) {
                 const buttonsElement = document.querySelector(".js-setDone");

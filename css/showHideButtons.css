@@ -20,7 +20,9 @@
 
 
 .setDone--off:disabled {
-    cursor: pointer;
+    color: teal;
+    border: none;
+    background-color: transparent;
 }
 
 .displayNone {
