@@ -65,7 +65,6 @@
 
     bindButtonsEvents = () => {
 
-        console.log("Array is empty!")
         showTaskButtons = document.querySelectorAll(".js-showTasksButtons");
         showTaskButtons.forEach((showTaskButton, index) => {
             showTaskButton.addEventListener("click", () => {
@@ -92,13 +91,11 @@
     };
 
     const renderButtons = () => {
-
+        const buttonsElement = document.querySelector(".js-setDone");
         if (tasks.length !== 0) {
-            const buttonsElement = document.querySelector(".js-setDone");
             buttonsElement.innerHTML = `<button class="js-setDone, setDone">Ukończ wszystkie</button>`;
         } else {
             if (tasks.length === 0) {
-                const buttonsElement = document.querySelector(".js-setDone");
                 buttonsElement.innerHTML = ""
             }
         }
@@ -113,8 +110,8 @@
     };
 
     const formEvents = () => {
-        const focusInput = document.querySelector(".js-input").focus();
-        const resetForm = document.querySelector(".form").reset();
+        document.querySelector(".js-input").focus();
+        document.querySelector(".form").reset();
     };
 
     const onFormSubmit = (event) => {
