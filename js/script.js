@@ -50,9 +50,9 @@
     const isEveryTasksDone = () => {
         tasks = tasks.every(({ done }) => done);
         if (isEveryTasksDone === true) {
-            return buttonsSetDoneAll.innerHTML = `<button class="js-setDone setDone--off">Ukończ wszystkie</button>`;
+            return buttonsSetDoneAll.classList.add("setDone--off");
         };
-        console.log(tasks)
+        console.log(tasks);
         render();
     };
 
