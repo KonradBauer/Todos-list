@@ -18,13 +18,12 @@
     background-color: transparent;
 }
 
-
 .setDone--off:disabled {
     color: teal;
     border: none;
     background-color: transparent;
 }
-
+    
 .displayNone {
     color: teal;
     border: none;

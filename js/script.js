@@ -47,7 +47,16 @@
         render();
     };
 
-    bindEvents = () => {
+    const isEveryTasksDone = () => {
+        tasks = tasks.every(({ done }) => done);
+        if (isEveryTasksDone === true) {
+            return buttonsSetDoneAll.innerHTML = `<button class="js-setDone setDone--off">Ukończ wszystkie</button>`;
+        };
+        console.log(tasks)
+        render();
+    };
+
+    const bindEvents = () => {
         const removeButtons = document.querySelectorAll(".js-remove");
         removeButtons.forEach((removeButton, index) => {
             removeButton.addEventListener("click", () => {
@@ -63,9 +72,9 @@
         });
     };
 
-    bindButtonsEvents = () => {
+    const bindButtonsEvents = () => {
 
-        showTaskButtons = document.querySelectorAll(".js-showTasksButtons");
+        const showTaskButtons = document.querySelectorAll(".js-showTasksButtons");
         showTaskButtons.forEach((showTaskButton, index) => {
             showTaskButton.addEventListener("click", () => {
                 setTasksDone(index);
@@ -91,12 +100,12 @@
     };
 
     const renderButtons = () => {
-        const buttonsElement = document.querySelector(".js-setDone");
+        const buttonsSetDoneAll = document.querySelector(".js-setDone");
         if (tasks.length !== 0) {
-            buttonsElement.innerHTML = `<button class="js-setDone, setDone">Ukończ wszystkie</button>`;
+            buttonsSetDoneAll.innerHTML = `<button class="js-setDone setDone">Ukończ wszystkie</button>`;
         } else {
             if (tasks.length === 0) {
-                buttonsElement.innerHTML = ""
+                buttonsSetDoneAll.innerHTML = ""
             }
         }
     };
