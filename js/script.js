@@ -53,6 +53,13 @@
         render();
     };
 
+    const toggleTasks = () => {
+       if (hideDoneTasks === false)
+       return hideDoneTasks !== false
+
+        render();
+    };
+
     const bindEvents = () => {
         const removeButtons = document.querySelectorAll(".js-remove");
         removeButtons.forEach((removeButton, index) => {
@@ -71,10 +78,17 @@
 
     const bindButtonsEvents = () => {
 
-        const showTaskButtons = document.querySelectorAll(".js-doneAllButton");
-        showTaskButtons.forEach((showTaskButton, index) => {
-            showTaskButton.addEventListener("click", () => {
+        const setTaskDoneButtons = document.querySelectorAll(".js-doneAllButton");
+        setTaskDoneButtons.forEach((setTaskDoneButton, index) => {
+            setTaskDoneButton.addEventListener("click", () => {
                 setTasksDone(index);
+            });
+        });
+
+        const setHideDoneTasksButtons = document.querySelectorAll(".js-hideDoneTasks");
+        setHideDoneTasksButtons.forEach((setHideDoneTasksButton, index) => {
+            setHideDoneTasksButton.addEventListener("click", () => {
+                toggleTasks(index);
             });
         });
 

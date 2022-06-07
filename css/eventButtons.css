@@ -1,44 +1,44 @@
-.setDone {
+.setDoneButton {
     color: teal;
     border: none;
     background-color: transparent;
     transition: 0.35s;
 }
 
-.setDone:hover {
+.setDoneButton:hover {
     color: hsl(180, 100%, 35%);
     border: none;
     background-color: transparent;
     cursor: pointer;
 }
 
-.setDone:active {
+.setDoneButton:active {
     color: hsl(180, 100%, 45%);
     border: none;
     background-color: transparent;
 }
 
-.setDone--off:disabled {
+.setDoneButton--off:disabled {
     color: teal;
     border: none;
     background-color: transparent;
 }
     
-.hideButton {
+.setHideButton {
     color: teal;
     border: none;
     background-color: transparent;
     transition: 0.35s;
 }
 
-.hideButton:hover {
+.setHideButton:hover {
     color: hsl(180, 100%, 35%);
     border: none;
     background-color: transparent;
     cursor: pointer;
 }
 
-.hideButton:active {
+.setHideButton:active {
     color: hsl(180, 100%, 45%);
     border: none;
     background-color: transparent;
