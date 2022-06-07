@@ -24,21 +24,21 @@
     background-color: transparent;
 }
     
-.displayNone {
+.hideButton {
     color: teal;
     border: none;
     background-color: transparent;
     transition: 0.35s;
 }
 
-.displayNone:hover {
+.hideButton:hover {
     color: hsl(180, 100%, 35%);
     border: none;
     background-color: transparent;
     cursor: pointer;
 }
 
-.displayNone:active {
+.hideButton:active {
     color: hsl(180, 100%, 45%);
     border: none;
     background-color: transparent;
