@@ -47,17 +47,9 @@
         render();
     };
 
-    const isEveryTasksDone = () => {
-        tasks.every(({ done }) => done);
-       
-        render();
-    };
-
     const toggleTasks = () => {
        if (hideDoneTasks === false)
        return hideDoneTasks !== false
-
-        render();
     };
 
     const bindEvents = () => {
@@ -111,12 +103,15 @@
     };
 
     const renderButtons = () => {
-        const buttonsSetDoneAll = document.querySelector(".js-setDoneButton");
+
+        const buttonSetDoneAll = document.querySelector(".js-doneAllButton");
+        const isEveryTasksDone = () => tasks.every(({ done }) => done);
+        
         if (tasks.length !== 0) {
-            buttonsSetDoneAll.innerHTML = `<button class="js-setDoneButton setDone">Ukończ wszystkie</button>`;
+            buttonSetDoneAll.innerHTML = `<button class="setDoneButton${isEveryTasksDone === true ? disabled : ""}">Ukończ wszystkie</button>`;
         } else {
             if (tasks.length === 0) {
-                buttonsSetDoneAll.innerHTML = ""
+                buttonSetDoneAll.innerHTML = ""
             }
         }
     };

@@ -17,13 +17,7 @@
     border: none;
     background-color: transparent;
 }
-
-.setDoneButton--off:disabled {
-    color: teal;
-    border: none;
-    background-color: transparent;
-}
-    
+  
 .setHideButton {
     color: teal;
     border: none;
