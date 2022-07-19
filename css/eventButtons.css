@@ -17,6 +17,12 @@
     border: none;
     background-color: transparent;
 }
+
+.setDoneButton:disabled {
+    border: none;
+    background-color: transparent;
+    color: hsl(0, 0%, 80%);
+}
   
 .setHideButton {
     color: teal;
