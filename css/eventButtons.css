@@ -25,21 +25,21 @@
     cursor: not-allowed;
 }
   
-.setHideButton {
+.toggleDoneTasksButton {
     color: teal;
     border: none;
     background-color: transparent;
     transition: 0.35s;
 }
 
-.setHideButton:hover {
+.toggleDoneTasksButton:hover {
     color: hsl(180, 100%, 35%);
     border: none;
     background-color: transparent;
     cursor: pointer;
 }
 
-.setHideButton:active {
+.toggleDoneTasksButton:active {
     color: hsl(180, 100%, 45%);
     border: none;
     background-color: transparent;
